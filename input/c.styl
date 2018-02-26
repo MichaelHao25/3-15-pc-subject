@@ -1,0 +1,574 @@
+div
+	margin 0
+li
+	float none
+a
+	color inherit
+	font-size inherit
+	line-height inherit
+img
+	vertical-align top
+.fl
+	float left
+.fr
+	float right
+.por
+	position relative
+.clear
+	zoom 1
+	&:after
+		content ''
+		display block
+		clear both
+
+.container
+	width 1120px
+	margin 0 auto
+.header
+	background #1e1b27
+	.container
+		height 100px
+		.brand
+			height @height
+			width 140px
+			background url(../img/hico1.png) center center no-repeat
+		.tel
+		.messages
+			width 100px
+			height @height
+			border-left 1px solid #433b3f
+		.tel
+			background url(../img/hico2.png) center center no-repeat
+		.messages
+			background url(../img/hico3.png) center center no-repeat
+		.nav
+			padding-left 30px
+			font-size 16px
+			color #9e9da0
+			height @height
+			a
+				height @height
+				margin-left 50px
+				line-height @height
+				&:hover
+					color #fff
+.main
+	.banner
+		height 740px
+		background url(../img/banner.png) center top no-repeat
+	.section-sale
+		height 632px
+		background url(../img/sale-bg.png) center top no-repeat
+		font-size 54px
+		text-align center
+		h3
+			padding-top 100px
+			color #1e1b27
+			font-weight bold
+		h4
+			color #1e1b27
+			font-weight 300
+		.date
+			padding 40px 0 20px
+			color #aa001f
+			font-weight bold
+		p
+			padding-bottom 40px
+			font-size 30px
+			color #1e1b27
+		a
+			display block
+			width 305px
+			height 70px
+			margin 0 auto
+			background #aa001f
+			font-size 24px
+			color #fff
+			line-height 70px
+	.section-valuable
+		background #1e1b27
+		padding 190px 0 90px
+		.wrap
+			padding 60px 70px
+			background #fff
+			img
+				position absolute
+				bottom 60px
+				left 70px
+			.text
+				width 420px
+				h3
+					padding-bottom 70px
+					font-size 54px
+					color #1e1b27
+					font-weight 300
+					b
+						font-weight bold
+				p
+					padding-bottom 30px
+					font-size 20px
+					color #333
+					line-height 1.5
+					&.c999999
+						color #999
+				a
+					display block
+					margin-top 50px
+					width 174px
+					height 54px
+					font-size 20px
+					color #fff
+					line-height 54px
+					text-align center
+					background #aa001f
+	.section-ability
+		padding 60px 0 110px
+		background #aa001f
+		.title
+			padding-bottom 30px
+			text-align center
+			h3
+				padding-bottom 10px
+				font-size 54px
+				color #fff
+				font-weight 300
+				b
+					font-weight bold
+			small
+				text-transform uppercase
+				font-family 'Myriad Pro Regular'
+				color #ffff
+				opacity 0.2
+				letter-spacing 28px
+		.container
+			background #fff 
+		.row
+			&.first
+				padding-top 40px
+				.left
+					width 534px
+					margin-left 58px
+					padding-top 140px
+					height 290px
+					background linear-gradient(to right ,#bbbabe 0% ,#bbbabe 50%  ,transparent 50% ,transparent 100% ) left bottom/20px 2px repeat-x
+					p
+						margin-bottom 20px
+						&.gray
+							span
+								color #666
+								background #e5e5e5
+						span
+							font-size 24px
+							color #fff
+							background #000
+							padding 3px 5px
+				.right
+					margin-right 39px
+					padding 33px 33px 0 0 
+					background url(../img/hico4.png) right top no-repeat
+			&.second
+				padding 0 58px
+				h3
+					padding 60px 0
+					font-size 48px
+					color #1e1b27
+					font-weight 300
+			&.third
+				padding 0 58px 60px
+				img
+					display block
+					width 470px
+				p
+					padding-top 10px
+					text-align center
+					line-height 1
+					font-size 30px
+					color #1e1b27
+			&.fourth
+				background #f5f4f4
+				margin 0 20px
+				padding-bottom 60px
+				.sub-title
+					padding 55px 0
+					h3
+						font-size 54px
+						color #1e1b27
+						font-weight 300
+						text-align center
+						b
+							font-weight bold
+				.list
+					.w30
+						width 31%
+						img
+							width 100%
+						&+.w30
+							margin-left 3.5%
+						.text
+							position relative
+							z-index 1
+							padding 20px 0
+							margin 0 10px
+							margin-top -50px
+							text-align center
+							background #fff
+							h4
+								padding 5px 0 10px
+								font-size 20px
+								color #1e1b27
+								font-weight bold
+							p
+								font-size 16px
+								color #1e1b27
+								line-height 1.5
+							
+			&.fifth
+				.sub-title
+					padding 60px 0 40px
+					text-align center
+					h3
+						font-size 48px
+						color #1e1b27
+						font-weight 300
+						b
+							font-weight bold
+					p
+						padding-top 30px
+						font-size 30px
+						color #1e1b27
+	.section-door
+		padding 70px 0 50px
+		h3
+			font-size 54px
+			color #1e1b27
+			font-weight 300
+			text-align center
+			b
+				font-weight bold
+		.date
+			padding 25px 0 55px
+			font-size 36px
+			color #aa001f
+			text-align center
+		.door
+			background #1e1b27
+			.content
+				width 360px
+				h4
+					padding 50px 0 60px
+					font-size 48px
+					color #fff
+					font-weight normal
+				.cost
+					padding-bottom 40px
+					font-size 36px
+					color #aa001f
+					b
+						font-weight normal
+						line-height 0
+						font-size 80px
+					span
+						font-size 18px
+						color #fff
+						opacity 0.1
+						.del
+							text-decoration line-through
+				.item
+					margin-bottom 18px
+					padding 10px 0 10px 40px
+					font-size 20px
+					color #fff
+					background url(../img/hico5.png) left center no-repeat
+				p
+					font-size 16px
+					color #fff
+		.tips
+			margin 50px auto
+			width 467px
+			height 70px
+			font-size 24px
+			color #fff
+			text-align center
+			line-height 70px
+			background #aa001f
+		.qrcode
+			min-height 334px
+			background url(../img/qrcode.png) center center no-repeat
+			.w50	
+				width 50%
+				p
+					font-size 24px
+					color #d40127
+					padding 30px 0
+					text-align center
+				.pic
+					img
+						display block
+						margin 0 auto
+					span
+						padding-top 10px
+						font-size 12px
+						color #fff
+						text-align center
+						display block
+				.brand
+					display block
+					margin 25px auto 30px
+				h4
+					font-size 36px
+					color #d40127
+					span
+						color #fff
+				a
+					display block
+					margin 30px auto 0
+					width 239px
+					height 70px
+					font-size 24px
+					color #aa001f
+					background #fff
+					line-height 70px
+					text-align center
+	.section-quality
+		position relative
+		height 879px
+		background url(../img/quality.jpg) center top no-repeat
+		text-align center
+		&:after
+			content ""
+			position absolute
+			top 0
+			left 50%
+			margin-left -20px
+			border 20px solid transparent
+			border-top-color #fff
+		h3
+			padding 70px 0 15px
+			line-height 1
+			font-size 48px
+			color #fff
+			font-weight 300
+			b
+				font-weight bold
+		p
+			padding-bottom 30px
+			font-size 24px
+			color #fff
+		.pic
+			margin 0 auto
+			width 794px
+			border 5px solid #fff
+			img
+				width 100%
+				display block
+		strong
+			display block
+			padding 30px 0 40px
+			font-size 30px
+			color #fff
+			font-weight bold
+		.tips
+			margin 0 auto
+			width 467px
+			height 70px
+			line-height 70px
+			text-align center
+			font-size 24px
+			color #fff
+			background #aa001f
+		span
+			display block
+			padding-top 20px
+			font-size 14px
+			color #fff
+	.section-quadrupole
+		text-align center
+		padding 34px 0
+		background #aa001f
+		small
+			display block
+			text-transform uppercase
+			font-family 'Myriad Pro Regular'
+			color #ffff
+			opacity 0.2
+			letter-spacing 28px
+		h3
+			padding 15px 0
+			font-size 54px
+			color #fff
+			font-weight 300
+			b
+				font-weight bold
+		.tips
+			margin 0 auto
+			width 560px
+			height 48px
+			font-size 20px
+			color #fff
+			line-height 48px
+			text-align center
+			border 1px solid #fff
+	.section-long-quality
+		padding 60px 0 70px
+		background url(../img/long-quality.jpg) center top no-repeat
+		.list
+			.w22
+				width 22%
+				background #fff
+				h3
+					font-size 24px
+					color #f33a09
+					line-height 65px
+					text-align center
+				img
+					display block
+					width 220px
+					margin 0 auto
+				p
+					width 220px
+					margin 15px auto 20px
+					font-size 16px
+					color #333
+					height 46px
+					line-height 1.5
+				&+.w22
+					margin-left 3%
+		.pic-text
+			padding 70px 0
+			text-align center
+			img
+				width 616px
+		.tips
+			margin 0 auto
+			width 449px
+			height 70px
+			font-size 24px
+			color #fff
+			text-align center
+			background #aa001f
+			line-height 70px
+	.section-shoping
+		text-align center
+		padding-bottom 60px
+		.title
+			padding 50px 0 60px
+			h3
+				font-size 54px
+				color #1e1b27
+				font-weight 300
+				b
+					font-weight bold
+			small
+				padding-top 20px
+				color #1e1b27
+				font-size 24px
+				display block
+				text-transform uppercase
+				font-family 'Myriad Pro Regular'
+				opacity 0.3
+				letter-spacing 28px
+		.list
+			.w22
+				position relative
+				width 22%
+				padding 20px
+				box-sizing border-box
+				background #f3f1f4
+				.pic
+					img
+						display block
+						width 100%
+				h4
+					font-size 22px
+					color #000
+					padding-top 15px
+				p
+					font-size 16px
+					color #666
+					padding-top 10px
+					padding-bottom 20px
+				a
+					display block
+					margin 0 auto
+					font-size 16px
+					color #1e1b27
+					width 140px
+					height 40px
+					border 1px solid #1e1b27
+					line-height 40px
+					text-align center
+				&+.w22
+					margin-left 3%
+				.hot
+					position absolute
+					top -30px
+					font-size 20px
+					color #fff
+					line-height 76px
+					text-align center
+					left 50%
+					margin-left -38px
+					width 76px
+					height 76px
+					background url(../img/hico11.png) center center no-repeat
+		.ads
+			padding-top 30px
+			img
+			a
+				display block
+				width 100%
+	.section-fail
+		padding-bottom 100px
+		background #1e1b27
+		h3
+			padding 50px 0
+			text-align center
+			font-size 54px
+			font-weight 300
+			color #fff
+			b
+				font-weight bold
+		.tips
+			position relative
+			width 424px
+			height 70px
+			font-size 24px
+			color #fff
+			line-height 70px
+			text-align center
+			margin 60px auto 0
+			background #aa001f
+			&:after
+				content ""
+				position absolute
+				left 50%
+				bottom -80px
+				margin-left -20px
+				border 20px solid transparent
+				border-top-color #aa001f
+
+.footer
+	padding-top 50px
+	text-align center
+	background #1e1b27
+	.sale-date
+		font-size 48px
+		color #fff
+		b
+			font-weight bold
+	.tips
+		margin 30px auto
+		width 690px
+		height 70px
+		font-size 30px
+		color #fff
+		line-height 70px
+		background #aa001f
+	.tel
+		font-size 36px
+		color #fff
+	.additive
+		padding 20px 0
+		font-size 16px
+		color #fff
+		opacity 0.3
