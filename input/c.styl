@@ -21,56 +21,128 @@ img
 		display block
 		clear both
 
-.container
-	width 1120px
-	margin 0 auto
 .header
+	height 88px
+	display -webkit-flex
+	display -moz-flex
+	display -ms-flex
+	display -o-flex
+	display flex
+	justify-content space-between
 	background #1e1b27
-	.container
-		height 100px
-		.brand
-			height @height
-			width 140px
-			background url(../img/hico1.png) center center no-repeat
-		.tel
-		.messages
-			width 100px
-			height @height
-			border-left 1px solid #433b3f
-		.tel
-			background url(../img/hico2.png) center center no-repeat
-		.messages
-			background url(../img/hico3.png) center center no-repeat
-		.nav
-			padding-left 30px
-			font-size 16px
-			color #9e9da0
-			height @height
+	.back
+		width 60px
+		height 100%
+		background url(../img/hico12.png) center center/25px auto no-repeat
+	h1
+		font-size 36px
+		color #fff
+		height @height
+		line-height @height
+		font-weight 300
+	.menu
+		position relative
+		width 74px
+		height 100%
+		display -webkit-flex
+		display -moz-flex
+		display -ms-flex
+		display -o-flex
+		display flex
+		align-items center
+		justify-content center
+		&.active
+			span
+				transform rotate(90deg)
+				&:after
+					top 0
+					transform rotate(-90deg)
+					transition top 0.3s,transform 0.3s
+				&:before
+					bottom 0
+					transform rotate(-90deg)
+					transition bottom 0.3s, transform 0.3s
+		span
+			position relative
+			display block
+			width 35px
+			height 4px
+			background #666
+			border-radius 2px
+			transition transform 0.3s
+			&:after
+				content ""
+				position absolute
+				top -15px
+				left 0
+				right 0
+				width 100%
+				height 4px
+				border-radius 2px
+				background #666
+				transition top 0.3s,transform 0.3s
+			&:before
+				content ""
+				position absolute
+				bottom -15px
+				left 0
+				right 0
+				width 100%
+				height 4px
+				border-radius 2px
+				background #666
+				transition bottom 0.3s, transform 0.3s		
+		.child-menu
+			position absolute
+			right 20px
+			top 100%
+			padding-top 10px
+			display none
+			.nav
+				position relative
+				padding 0 20px
+				background #fff
+				&:after
+					content ""
+					position absolute
+					right 10px
+					top -20px
+					border 10px solid transparent
+					border-bottom-color #fff
 			a
-				height @height
-				margin-left 50px
-				line-height @height
-				&:hover
-					color #fff
+				display block
+				font-size 24px
+				color #666
+				text-align center
+				width 120px
+				height 60px
+				line-height 60px
+				border-bottom 1px solid #e5e5e5
+				
 .main
 	.banner
-		height 740px
-		background url(../img/banner.png) center top no-repeat
+		img
+			display block
+			width 100%
 	.section-sale
-		height 632px
-		background url(../img/sale-bg.png) center top no-repeat
-		font-size 54px
+		width 100%
+		height 667px
 		text-align center
+		background url(../img/sale-bg.jpg) center center/100% 100% no-repeat
 		h3
-			padding-top 100px
+			padding-top 130px
+			font-size 54px
 			color #1e1b27
 			font-weight bold
 		h4
+			padding-top 10px
+			font-size 48px
 			color #1e1b27
 			font-weight 300
 		.date
 			padding 40px 0 20px
 			color #aa001f
+			font-size 48px
 			font-weight bold
 		p
 			padding-bottom 40px
@@ -86,47 +158,44 @@ img
 			color #fff
 			line-height 70px
 	.section-valuable
-		background #1e1b27
-		padding 190px 0 90px
 		.wrap
-			padding 60px 70px
-			background #fff
 			img
-				position absolute
-				bottom 60px
-				left 70px
+				display block
+				width 100%
 			.text
-				width 420px
+				padding 0 50px 75px 50px
 				h3
-					padding-bottom 70px
+					padding 50px 0
+					line-height 1
 					font-size 54px
 					color #1e1b27
 					font-weight 300
 					b
 						font-weight bold
 				p
-					padding-bottom 30px
-					font-size 20px
+					padding-bottom 50px
+					font-size 30px
 					color #333
 					line-height 1.5
 					&.c999999
 						color #999
 				a
 					display block
-					margin-top 50px
-					width 174px
-					height 54px
-					font-size 20px
+					margin 20px auto 0
+					width 240px
+					height 70px
+					font-size 30px
 					color #fff
-					line-height 54px
+					line-height 70px
 					text-align center
 					background #aa001f
 	.section-ability
-		padding 60px 0 110px
-		background #aa001f
+		padding-bottom 50px
 		.title
 			padding-bottom 30px
 			text-align center
+			background #1e1b27
+			padding 70px 0 40px
 			h3
 				padding-bottom 10px
 				font-size 54px
@@ -140,44 +209,51 @@ img
 				color #ffff
 				opacity 0.2
 				letter-spacing 28px
-		.container
-			background #fff 
 		.row
 			&.first
+				display -webkit-flex
+				display -moz-flex
+				display -ms-flex
+				display -o-flex
+				display flex
 				padding-top 40px
 				.left
-					width 534px
-					margin-left 58px
-					padding-top 140px
-					height 290px
+					width 358px
+					margin-left 18px
+					padding-top 80px
+					padding-right 50px
 					background linear-gradient(to right ,#bbbabe 0% ,#bbbabe 50%  ,transparent 50% ,transparent 100% ) left bottom/20px 2px repeat-x
 					p
-						margin-bottom 20px
 						&.gray
 							span
 								color #666
+								font-size 24px
 								background #e5e5e5
 						span
-							font-size 24px
+							line-height 2
+							font-size 30px
 							color #fff
 							background #000
 							padding 3px 5px
 				.right
-					margin-right 39px
-					padding 33px 33px 0 0 
+					padding 33px 0 0 0 
 					background url(../img/hico4.png) right top no-repeat
+					img
+						display block
+						width 355px
 			&.second
-				padding 0 58px
+				padding 0 20px
 				h3
-					padding 60px 0
-					font-size 48px
+					padding 50px 0 30px
+					font-size 54px
 					color #1e1b27
 					font-weight 300
+					b
+						font-weight bold
 			&.third
-				padding 0 58px 60px
 				img
 					display block
-					width 470px
+					width 360px
 				p
 					padding-top 10px
 					text-align center
@@ -185,11 +261,8 @@ img
 					font-size 30px
 					color #1e1b27
 			&.fourth
-				background #f5f4f4
-				margin 0 20px
-				padding-bottom 60px
 				.sub-title
-					padding 55px 0
+					padding 70px 0 50px
 					h3
 						font-size 54px
 						color #1e1b27
@@ -199,32 +272,49 @@ img
 							font-weight bold
 				.list
 					.w30
-						width 31%
-						img
-							width 100%
+						width 100%
+						position relative
+						&:nth-child(odd)
+							.text
+								right 0
+								left auto
 						&+.w30
-							margin-left 3.5%
+							margin-top 40px
+						img
+							width 400px
 						.text
-							position relative
+							position absolute
+							top 50%
+							left 0
+							transform translateY(-50%)
 							z-index 1
-							padding 20px 0
-							margin 0 10px
-							margin-top -50px
+							padding 40px
+							box-sizing border-box
+							width 380px
+							height 280px
 							text-align center
-							background #fff
+							background #e5e5e5
+							display -webkit-flex
+							display -moz-flex
+							display -ms-flex
+							display -o-flex
+							display flex
+							flex-direction column
+							align-items center
+							justify-content center
 							h4
-								padding 5px 0 10px
-								font-size 20px
+								padding-bottom 30px
+								font-size 36px
 								color #1e1b27
 								font-weight bold
 							p
-								font-size 16px
+								font-size 20px
 								color #1e1b27
 								line-height 1.5
 							
 			&.fifth
 				.sub-title
-					padding 60px 0 40px
+					padding 70px 0 40px
 					text-align center
 					h3
 						font-size 48px
@@ -233,31 +323,46 @@ img
 						b
 							font-weight bold
 					p
-						padding-top 30px
+						padding-top 50px
 						font-size 30px
 						color #1e1b27
 	.section-door
-		padding 70px 0 50px
+		background #1e1b27
 		h3
+			padding 70px 0 0 0
 			font-size 54px
-			color #1e1b27
+			color #fff
 			font-weight 300
 			text-align center
+			line-height 1.1
 			b
 				font-weight bold
+				.red
+					color #ff0101
 		.date
-			padding 25px 0 55px
+			padding 30px 0
 			font-size 36px
 			color #aa001f
 			text-align center
-		.door
 			background #1e1b27
+		.door
+			background #fff
+			display -webkit-flex
+			display -moz-flex
+			display -ms-flex
+			display -o-flex
+			display flex
+			justify-content space-between
+			.pic
+				img
+					display block
+					width 380px
 			.content
-				width 360px
+				padding-left 60px
 				h4
 					padding 50px 0 60px
 					font-size 48px
-					color #fff
+					color #1e1b27
 					font-weight normal
 				.cost
 					padding-bottom 40px
@@ -268,23 +373,29 @@ img
 						line-height 0
 						font-size 80px
 					span
-						font-size 18px
-						color #fff
-						opacity 0.1
+						padding-top 10px
+						opacity 0.5
+						display block
+						font-size 22px
+						color #1e1b27
 						.del
 							text-decoration line-through
 				.item
 					margin-bottom 18px
 					padding 10px 0 10px 40px
 					font-size 20px
-					color #fff
-					background url(../img/hico5.png) left center no-repeat
+					color #1e1b27
+					background url(../img/hico5.png) left center /30px auto no-repeat
+				.w258
+					display block
+					width 258px
 				p
-					font-size 16px
-					color #fff
+					padding-top 15px
+					font-size 20px
+					color #1e1b27
 		.tips
-			margin 50px auto
-			width 467px
+			margin 50px auto 60px
+			width 530px
 			height 70px
 			font-size 24px
 			color #fff
@@ -292,63 +403,76 @@ img
 			line-height 70px
 			background #aa001f
 		.qrcode
-			min-height 334px
-			background url(../img/qrcode.png) center center no-repeat
-			.w50	
-				width 50%
+			width 709px
+			height 748px
+			margin 0 auto
+			background url(../img/qrcode-5.jpg) center center no-repeat
+			.w650
+				width 650px
+				margin 0 auto
+				border-bottom 1px dotted #dd0505
+			.w50
+				width 100%
+				.w50
+					width 50%
 				p
-					font-size 24px
-					color #d40127
-					padding 30px 0
+					font-size 36px
+					color #aa001f
+					padding 40px 0 30px
 					text-align center
 				.pic
 					img
 						display block
+						width 302px
 						margin 0 auto
 					span
-						padding-top 10px
-						font-size 12px
-						color #fff
+						padding 20px 0 40px
+						font-size 30px
+						color #000
 						text-align center
 						display block
-				.brand
-					display block
-					margin 25px auto 30px
+						b
+							font-weight normal
+							color #dd0505
 				h4
-					font-size 36px
-					color #d40127
+					padding 20px 0 20px
+					font-size 48px
+					color #000
+					font-weight 400
+					text-align center
 					span
-						color #fff
+						color #aa001f
 				a
 					display block
-					margin 30px auto 0
-					width 239px
+					margin 0 auto 0
+					width 319px
 					height 70px
-					font-size 24px
-					color #aa001f
-					background #fff
+					font-size 30px
+					color #fff
+					background #aa001f
 					line-height 70px
 					text-align center
 	.section-quality
+		padding-top 40px
 		position relative
-		height 879px
-		background url(../img/quality.jpg) center top no-repeat
+		background #1e1b27
 		text-align center
 		&:after
 			content ""
 			position absolute
-			top 0
+			top 40px
 			left 50%
-			margin-left -20px
+			margin-left -20Px
 			border 20px solid transparent
 			border-top-color #fff
 		h3
-			padding 70px 0 15px
-			line-height 1
+			padding 50px 0 30px
+			line-height 1.3
 			font-size 48px
 			color #fff
 			font-weight 300
 			b
+				display block
 				font-weight bold
 		p
 			padding-bottom 30px
@@ -356,7 +480,7 @@ img
 			color #fff
 		.pic
 			margin 0 auto
-			width 794px
+			width 630px
 			border 5px solid #fff
 			img
 				width 100%
@@ -364,33 +488,55 @@ img
 		strong
 			display block
 			padding 30px 0 40px
-			font-size 30px
+			font-size 36px
 			color #fff
-			font-weight bold
+			font-weight normal
+			b
+				display block
+				padding-bottom 10px
+				font-weight bold
 		.tips
 			margin 0 auto
-			width 467px
+			width 589px
 			height 70px
 			line-height 70px
 			text-align center
-			font-size 24px
+			font-size 30px
 			color #fff
 			background #aa001f
 		span
 			display block
-			padding-top 20px
-			font-size 14px
+			padding-top 15px
+			padding-bottom 40px
+			font-size 24px
 			color #fff
 	.section-quadrupole
 		text-align center
-		padding 34px 0
+		padding 40px 0
 		background #aa001f
+		&.add
+			background #fff
+			small
+				color #1e1b27
+				letter-spacing 15px
+			h3
+				color #1e1b27
+			.bg000
+				width 484px
+				height 48px
+				line-height 48px
+				text-align center
+				font-size 24px
+				margin 0 auto
+				color #fff
+				background #000
 		small
 			display block
 			text-transform uppercase
 			font-family 'Myriad Pro Regular'
 			color #ffff
-			opacity 0.2
+			opacity 0.3
+			font-size 24px
 			letter-spacing 28px
 		h3
 			padding 15px 0
@@ -401,57 +547,80 @@ img
 				font-weight bold
 		.tips
 			margin 0 auto
-			width 560px
-			height 48px
-			font-size 20px
+			width 710px
+			height 54px
+			font-size 24px
 			color #fff
-			line-height 48px
+			line-height 54px
 			text-align center
 			border 1px solid #fff
+	.section-wap-add
+		img
+			display block
+			width 100%
+		.tips
+			width 525px
+			height 70px
+			margin 40px auto 70px
+			font-size 30px
+			color #fff
+			background #aa001f
+			line-height 70px
+			text-align center
 	.section-long-quality
-		padding 60px 0 70px
-		background url(../img/long-quality.jpg) center top no-repeat
 		.list
+			display -webkit-flex
+			display -moz-flex
+			display -ms-flex
+			display -o-flex
+			display flex
+			flex-wrap wrap
+			justify-content space-between
+			padding 10px 20px 40px
 			.w22
-				width 22%
-				background #fff
+				margin-top 20px
+				width 340px
+				background #f3f1f4
 				h3
-					font-size 24px
+					font-size 36px
 					color #f33a09
-					line-height 65px
+					line-height 80px
 					text-align center
+				.pic
+					width 274px
+					border 10px solid #fff
+					margin 0 auto
 				img
 					display block
-					width 220px
-					margin 0 auto
+					width 100%
 				p
-					width 220px
+					width 274px
 					margin 15px auto 20px
-					font-size 16px
+					font-size 24px
 					color #333
-					height 46px
+					height 72px
 					line-height 1.5
-				&+.w22
-					margin-left 3%
+		.bg
+			padding 100px 0 30px
+			background url(../img/hico15.png) center top/cover no-repeat
 		.pic-text
-			padding 70px 0
 			text-align center
+			padding-bottom 40px
 			img
-				width 616px
+				width 440px 
 		.tips
 			margin 0 auto
-			width 449px
+			width 470px
 			height 70px
-			font-size 24px
+			font-size 30px
 			color #fff
 			text-align center
 			background #aa001f
 			line-height 70px
 	.section-shoping
 		text-align center
-		padding-bottom 60px
 		.title
-			padding 50px 0 60px
+			padding 60px 0 0
 			h3
 				font-size 54px
 				color #1e1b27
@@ -466,12 +635,21 @@ img
 				text-transform uppercase
 				font-family 'Myriad Pro Regular'
 				opacity 0.3
-				letter-spacing 28px
+				letter-spacing 10px
 		.list
+			display -webkit-flex
+			display -moz-flex
+			display -ms-flex
+			display -o-flex
+			display flex
+			flex-wrap wrap
+			padding 0 20px
+			justify-content space-between
 			.w22
+				margin-top 60px
 				position relative
-				width 22%
 				padding 20px
+				width 345px
 				box-sizing border-box
 				background #f3f1f4
 				.pic
@@ -479,38 +657,36 @@ img
 						display block
 						width 100%
 				h4
-					font-size 22px
+					font-size 30px
 					color #000
 					padding-top 15px
 				p
-					font-size 16px
+					font-size 24px
 					color #666
 					padding-top 10px
 					padding-bottom 20px
 				a
 					display block
 					margin 0 auto
-					font-size 16px
-					color #1e1b27
-					width 140px
-					height 40px
+					font-size 24px
+					color #fff
+					background #1e1b27
+					width 240px
+					height 54px
 					border 1px solid #1e1b27
-					line-height 40px
+					line-height 54px
 					text-align center
-				&+.w22
-					margin-left 3%
 				.hot
 					position absolute
 					top -30px
 					font-size 20px
 					color #fff
-					line-height 76px
+					line-height 98px
 					text-align center
-					left 50%
-					margin-left -38px
-					width 76px
-					height 76px
-					background url(../img/hico11.png) center center no-repeat
+					right 0
+					width 98px
+					height 98px
+					background url(../img/hico11.png) center center/100% 100% no-repeat
 		.ads
 			padding-top 30px
 			img
@@ -518,7 +694,7 @@ img
 				display block
 				width 100%
 	.section-fail
-		padding-bottom 100px
+		padding-bottom 80px
 		background #1e1b27
 		h3
 			padding 50px 0
@@ -528,27 +704,32 @@ img
 			color #fff
 			b
 				font-weight bold
+		.fail
+			img
+				display block
+				width 710px
+				margin 0 auto 20px
 		.tips
 			position relative
-			width 424px
+			width 514px
 			height 70px
-			font-size 24px
-			color #fff
+			font-size 30px
+			color #1e1b27
 			line-height 70px
 			text-align center
-			margin 60px auto 0
-			background #aa001f
+			margin 50px auto 0
+			background #fff
 			&:after
 				content ""
 				position absolute
 				left 50%
-				bottom -80px
-				margin-left -20px
+				bottom -70px
+				margin-left -20Px
 				border 20px solid transparent
-				border-top-color #aa001f
+				border-top-color #fff
 
 .footer
-	padding-top 50px
+	padding-top 30px
 	text-align center
 	background #1e1b27
 	.sale-date
@@ -558,17 +739,19 @@ img
 			font-weight bold
 	.tips
 		margin 30px auto
-		width 690px
+		width 574px
 		height 70px
 		font-size 30px
 		color #fff
 		line-height 70px
 		background #aa001f
 	.tel
-		font-size 36px
+		font-size 30px
 		color #fff
+		padding-left 50px
+		background url(../img/hico16.png) left center/36px auto no-repeat
 	.additive
-		padding 20px 0
-		font-size 16px
+		padding 30px 0 20px
+		font-size 24px
 		color #fff
 		opacity 0.3
